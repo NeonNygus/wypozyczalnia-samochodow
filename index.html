@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/interpolation_style.css">
+    <link rel="stylesheet" href="./css/elements_styles.css">
+    <link rel="stylesheet" href="./css/mobile_style.css">
+    <link rel="stylesheet" href="./css/mobile_elements_styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="select">
+        <img src="./icons/car.jpg" alt="" height="50%" style="margin: 10px; user-select: none;">
+        <h2>Model samochodu</h2>
+        <div></div>
+        <select name="" id="selectModel">
+        </select>
+        </div>
+        <div class="select">
+        <img src="./icons/city.jpg" alt="" height="100%" style="margin-left: 10px; user-select: none;">
+        <h2>Miasto <p style="display: inline; font-size: 17px; margin-left: 10px;">(miejsce odbioru i zwrotu)</p></h2>
+        <div></div>
+        <select name="" id="selectCity">
+        </select>
+        </div>
+        <div>
+            <div id="slideGallery">
+                <div class="sliderImage" value="Citroen C3" style="margin-left: 75px;">
+                    <img src="./img/Citroen C3.jpg" alt="" height="130px">
+                    <p>Citroen C3</p>
+                </div>
+                <div class="sliderImage" value="Seat Ibiza">
+                    <img src="./img/Seat Ibiza.jpg" alt="" height="130px">
+                    <p>Seat Ibiza</p>
+                </div>
+                <div class="sliderImage" value="Skoda Fabia">
+                    <img src="./img/Skoda Fabia.jpg" alt="" height="130px">
+                    <p>Skoda Fabia</p>
+                </div>
+                <div class="sliderImage" value="Hyundai i30">
+                    <img src="./img/Hyundai i30.jpg" alt="" height="130px">
+                    <p>Hyundai i30</p>
+                </div>
+                <div class="sliderImage" value="Kia Ceed">
+                    <img src="./img/Kia Ceed.jpg" alt="" height="130px">
+                    <p>Kia Ceed</p>
+                </div>
+                <div class="sliderImage" value="Seat Leon">
+                    <img src="./img/Seat Leon.jpg" alt="" height="130px">
+                    <p>Seat Leon</p>
+                </div>
+                <div class="sliderImage" value="Kia Optima">
+                    <img src="./img/Kia Optima.jpg" alt="" height="130px">
+                    <p>Kia Optima</p>
+                </div>
+                <div class="sliderImage" value="Opel Insignia">
+                    <img src="./img/Opel Insignia.jpg" alt="" height="130px">
+                    <p>Opel Insignia</p>
+                </div>
+                <div class="sliderImage" value="Toyota Avensis">
+                    <img src="./img/Toyota Avensis.jpg" alt="" height="130px">
+                    <p>Toyota Avensis</p>
+                </div>
+                <div class="sliderImage" value="Toyota Avensis">
+                    <img src="./img/Toyota Avensis.jpg" alt="" height="130px">
+                    <p>Toyota Avensis</p>
+                </div>
+                <div class="sliderImage" value="Citroen C5 Aircross">
+                    <img src="./img/Citroen C5 Aircross.jpg" alt="" height="130px">
+                    <p>Citroen C5 Aircross</p>
+                </div>
+                <div class="sliderImage" value="Kia Sportage">
+                    <img src="./img/Kia Sportage.jpg" alt="" height="130px">
+                    <p>Kia Sportage</p>
+                </div>
+                <div class="sliderImage" value="Toyota RAV4" style="margin-right: 75px;">
+                    <img src="./img/Toyota RAV4.jpg" alt="" height="130px">
+                    <p>Toyota RAV4</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="next-button" id="searchButton">Dalej ></h3>
+    </div>
+    
+    <div class="container hidden" >
+        <h2 class="previous-button">< Wróć</h2>
+        <div id="infoHeader">
+            <img src="" alt="" id="infoHeaderImage">
+            <h2 id="infoHeaderContent"></h2>
+        </div>
+        <div class="container" id="displayInfo">
+            <h2>Model samochodu</h2>
+            <h2>-</h2>
+            <h2>Dostępność <p style="display: inline; font-size: 25px; margin-left: 10px;"> (ilość sztuk)</p></h2>
+            <h2>0</h2>
+            <h2>Klasa samochodu</h2>
+            <h2>-</h2>
+            <h2>Spalanie silnika <p style="display: inline; font-size: 25px; margin-left: 10px;"> (cykl miejski)</p></h2>
+            <h2>0</h2>
+            <h2>Cena za dobę</h2>
+            <h2>0</h2>
+        </div>
+        <h3 class="next-button" style="transform: translateY(260px);">Dalej ></h3>
+    </div>
+    
+    <div class="container hidden">
+        <h2 class="previous-button">< Wróć</h2>
+         <div>
+        <h2>Przewidywany przebieg (km)</h2>
+        <input type="number" min="100" max="10000" id="slider">
+        <h2>Rok otrzymania prawa jazdy</h2>
+       
+        <input type="number" min="1950" id="yearOfGettingLicence">
+        <h2>Data wynajmu samochodu</h2><input type="date" id="leaseDate">
+       <h2>Data zwrotu samochodu</h2><input type="date" id="returnDate">
+       <p id="message" style="color: brown; font-weight: bold;"></p>
+        </div>
+        
+        <h3 class="next-button" id="runButton">Oblicz ></h3>
+    
+    </div>
+    <div class="container hidden">
+        <h3 class="previous-button">< Wróć</h3>
+        <h1 style="user-select: none; margin-left: 10px;">Podsumowanie</h1>
+        <div id="displaySummary">
+        <h1></h1><div></div>
+            <h2>Model samochodu</h2>
+            <h2>-</h2>
+            <h2>Miasto <p style="display: inline; font-size: 23px;"> (miejsce odbioru i zwrotu)</p></h2>
+            <h2>-</h2>
+            <h2>Ilość dni wynajmu</h2>
+            <h2>-</h2>
+            <h2>Cena wynajmu za ilość dni</h2>
+            <h2>-</h2>
+            <h2>Koszt paliwa</h2>
+            <h2>-</h2>
+            <h2>Cena całkowita Netto</h2>
+            <h2>-</h2>
+            <h2>Cena całkowita Brutto</h2>
+            <h2>-</h2>
+        </div>
+    </div>
+    <script type='module' src="./js/script.js"></script>
+    <script type='module' src="./js/panelFunctionality.js"></script>
+    <script type='module'  src="./js/interpolation.js"></script>
+</body>
+</html>
