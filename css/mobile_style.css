@@ -38,7 +38,7 @@
 
 .container:nth-of-type(2) {
     padding: 0px;
-    grid-template-rows: 8% 23% 68%;
+    grid-template-rows: 19% 19% 19% 19% 19%;
 }
 .container:nth-of-type(2) .container {
     font-size: 15px;
@@ -46,17 +46,10 @@
     height: 350px;
 }
 .container:nth-of-type(3) {
-    padding: 0px;
-    grid-template-rows: 21% 76%;
+    grid-template-rows: 10% ;
+    grid-template-columns: 98%;
 }
 
-.container:nth-of-type(3) div{
-    padding: 0px;
-    grid-template-columns: 50% 50%;
-}
-.container:nth-of-type(3) h2{
-    padding: 0px;
-}
 .container:nth-of-type(4) {
     grid-template-rows: 7% 4%;
 }
