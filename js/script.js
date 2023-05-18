@@ -113,12 +113,17 @@ runButton.addEventListener('click', () =>
                                     */
                                     message.innerHTML = "";
                                     displaySummary.childNodes[6].innerHTML = carFullName;
+                                    
                                     displaySummary.childNodes[10].innerHTML = chosenCity;
                                     displaySummary.childNodes[14].innerHTML = calculateDays();
+                                    if(isNaN(calculateDays())) displaySummary.childNodes[14].innerHTML = "-";
                                     displaySummary.childNodes[18].innerHTML = fullBasePrice.toFixed(2) + "zł";
+                                    if(isNaN(fullBasePrice)) displaySummary.childNodes[18].innerHTML = "-";
                                     displaySummary.childNodes[22].innerHTML = fullPetrolPrice.toFixed(2) + "zł";
                                     displaySummary.childNodes[26].innerHTML = carFullPrice.toFixed(2) + "zł";
+                                    if(isNaN(carFullPrice)) displaySummary.childNodes[26].innerHTML = "-";
                                     displaySummary.childNodes[30].innerHTML = (carFullPrice * 1.23).toFixed(2) + "zł";
+                                    if(isNaN(carFullPrice)) displaySummary.childNodes[30].innerHTML = "-";
                                     validation();
                                     
                                 }
